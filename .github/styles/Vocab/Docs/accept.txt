@@ -148,6 +148,7 @@ Statsig
 subaction
 Subnet
 svg
+Tiktok
 Totango
 Twilio
 upsert

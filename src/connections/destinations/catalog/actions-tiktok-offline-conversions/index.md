@@ -1,6 +1,7 @@
 ---
 title: Tiktok Offline Conversions (Actions) Destination
 id: 6447ca8bfaa773a2ba0777a0
+hidden: true
 ---
 
 {% include content/plan-grid.md name="actions" %}
@@ -9,7 +10,7 @@ id: 6447ca8bfaa773a2ba0777a0
 
 **Benefits**
 - **Measure how TikTok ads influence offline conversions.** Learn what online strategies lead to better Brick & Mortar sales, subscription sign-ups or leads. 
-- **Power holistic attribution models with cross-channel event tracking.** Combine online and offline touchpoints to get comprehensive campaign metrics, like ROAS.
+- **Power holistic attribution models with cross-channel event tracking.** Combine online and offline touch points to get comprehensive campaign metrics, like ROAS.
 - **Reach offline customers online with custom audiences.** Promote new products or services to high-value customers who initiative offline events.
 
 
@@ -41,17 +42,17 @@ After setting up the Destination, four mappings will be enabled by default. You 
 
 {% include components/actions-fields.html %}
 
-## Acess Token & Event Set ID
+## Access Token & Event Set ID
 Please refer to the [documentation](https://ads.tiktok.com/marketing_api/docs?id=1758051319816193) to obtain the **Access Token** and the **Event Set ID**.
 
 ## PII Requirement & Validation
-TikTok Offline Events API requires at least one type of PII (email addresses and/or phone numbers) to be included in all offline conversion events. The email addresses and phone numbers will be hashed using SHA 256 from Segment before they are sent to TikTok. TikTok Offline Conversions Destination will automatically hash the provided PII, so please do not hash the PIIs before sending them to Segment. In addition, TikTok Offline Conversions Destination will validate all offline events before forwarding them to TikTok Offline Events API. TikTok Offline Conversions Destination will not send any offline events to TikTok with invalid or missing PIIs.
+TikTok Offline Events API requires at least one type of PII (email addresses and/or phone numbers) to be included in all offline conversion events. The email addresses and phone numbers will be hashed using SHA 256 from Segment before they are sent to TikTok. TikTok Offline Conversions Destination will automatically hash the provided PII, so please do not hash the PII before sending them to Segment. In addition, TikTok Offline Conversions Destination will validate all offline events before forwarding them to TikTok Offline Events API. TikTok Offline Conversions Destination will not send any offline events to TikTok with invalid or missing PII.
 
 ## Data and Privacy Considerations
 - Every offline event sent to TikTok Offline Events API requires at least one email address or phone number.
 - E-mails and phone numbers will be hashed in a privacy-safe way by default so that TikTok cannot identify customers who are not TikTok users.
 - iOS compliance checks will be performed on PII (ATT opt-out users will still be reported and attributed).
-- TikTok will pruge unmatched offline conversions IDs/records.
+- TikTok will purge unmatched offline conversions IDs/records.
 
 
 ---
