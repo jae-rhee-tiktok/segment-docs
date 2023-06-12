@@ -1,7 +1,7 @@
 ---
 title: TikTok Offline Conversions Destination
 id: 6447ca8bfaa773a2ba0777a0
-hidden: true
+private: true
 ---
 
 {% include content/plan-grid.md name="actions" %}
